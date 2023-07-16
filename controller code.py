@@ -1,8 +1,8 @@
 # ------------------------------------------
 # 
 # 	Project:    2023 VRC Controller Code
-#   Created:    1/21/22
-#	  Team:       37458A
+#   Created:    1/21/23
+#	Team:       37458A
 # 
 # ------------------------------------------
 
@@ -150,13 +150,12 @@ from vex import *
 
 IntakeMotor.set_velocity(120, RPM)
 RollerMotor.set_velocity(70, RPM)
-ExpansionMotor.set_velocity(200, RPM)
+ExpansionMotor.set_velocity(100, PERCENT)
 RollerMotor.set_max_torque(100, PERCENT)
 ShooterMotor.set_velocity(430, RPM)
 drivetrain.set_drive_velocity(100, PERCENT)
 
 drivetrain.set_turn_velocity(30, PERCENT)
-ExpansionMotor.set_velocity(100, PERCENT)
 
 def ex():
     ExpansionMotor.spin_for(FORWARD, 90, DEGREES)
